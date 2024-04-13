@@ -5,12 +5,12 @@ import 'package:http/http.dart' as http;
 import '../../domain/entities/product_entity.dart';
 
 class ProductDataSource {
-  final http.Client client;
+  final http.Client _client;
 
-  ProductDataSource({required this.client});
+  ProductDataSource(this._client);
 
   Future<List<ProductEntity>> getProducts() async {
-    final response = await client.get(
+    final response = await _client.get(
       Uri.parse('https://fakestoreapi.com/products'),
     );
 

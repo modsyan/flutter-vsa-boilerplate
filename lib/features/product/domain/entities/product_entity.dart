@@ -21,10 +21,8 @@ class ProductEntity {
   });
 
   factory ProductEntity.fromJson(Map<String, dynamic> json) =>
-      // throw UnimplementedError();
       _$ProductEntityFromJson(json);
 
   Map<String, dynamic> toJson() =>
-      // throw UnimplementedError();
       _$ProductEntityToJson(this);
 }

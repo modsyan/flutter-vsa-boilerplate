@@ -1,8 +1,10 @@
+import 'package:ecommerce_app/core/di_container.dart';
 import 'package:ecommerce_app/features/product/presentation/screens/product_detail_screen.dart';
 import 'package:ecommerce_app/features/product/presentation/screens/product_home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  setupLocator();
   runApp(const MyApp());
 }
 
